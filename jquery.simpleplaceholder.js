@@ -34,7 +34,7 @@ Simple Placeholder
 	};
 
 	$.fn.simplePlaceholder = function(options) {
-		if(document.createElement('input').placeholder == undefined){
+		if(!Modernizr.input.placeholder){
 			var config = {
 				placeholder_class : 'placeholding'
 			};
